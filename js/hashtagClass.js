@@ -113,7 +113,7 @@ hashtag.prototype = {
 			for (var i=-1,l=e.sets.length;++i<l;) {
 				var div = mk(e.sets[i]+' layers');
 				e.buffer.appendChild(div);
-				if (this.userModify && !/webkit/.test(this.userModify)) div.setAttribute('contenteditable', true);
+				if (!/webkit/.test(this.userModify)) div.setAttribute('contenteditable', true);
 				div.setAttribute('spellcheck', false);
 				div.setAttribute('autocorrect', 'off');
 				div.setAttribute('autocapitalize', 'off');
