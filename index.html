@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" x-frame-options="sameorigin">
+<head>
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+<meta http-equiv="Expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+<meta http-equiv="x-frame-options" content="sameorigin">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="相信大家對於 facebook hashtag 都已經很熟悉了, 只要鍵入 # 開頭的符號, 就可以輕輕鬆鬆幫自己的 post 上 tag, 透過 hashtag 的導入, 可以迅速的將自己的 post 做一個 grouping, 讓對該主題有興趣的朋友可以一覽下了這個 tag 的 post 有哪些, 由於這是個有趣的 feature, 所以我們家 PM 也希望可以把這功能納入自家服務當中, 於是筆者便著手 survey 一下相關的實作, 筆者發現像這種特殊用途的 input 類型 tag 其實非常適合使用 web components 來做封裝, 類似 inpyt[type=date] 一樣, 只要設定特定的 HTML tag 便能馬上具備特定的功能, 於是乎 <hash-tag> 這個標籤變因應此需求而誕生~">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@mei">
+<meta name="twitter:creator" content="@mei">
+<meta name="twitter:title" content="hashtag - web components based input field">
+<meta name="twitter:description" content="相信大家對於 facebook hashtag 都已經很熟悉了, 只要鍵入 # 開頭的符號, 就可以輕輕鬆鬆幫自己的 post 上 tag, 透過 hashtag 的導入, 可以迅速的將自己的 post 做一個 grouping, 讓對該主題有興趣的朋友可以一覽下了這個 tag 的 post 有哪些, 由於這是個有趣的 feature, 所以我們家 PM 也希望可以把這功能納入自家服務當中, 於是筆者便著手 survey 一下相關的實作, 筆者發現像這種特殊用途的 input 類型 tag 其實非常適合使用 web components 來做封裝, 類似 inpyt[type=date] 一樣, 只要設定特定的 HTML tag 便能馬上具備特定的功能, 於是乎 <hash-tag> 這個標籤變因應此需求而誕生~">
+<meta name="twitter:image:src" content="http://mei.homin.com.tw/img/preview/hashtag.png">
+<meta property="og:title" content="hashtag - web components based input field">
+<meta property="og:site_name" content="mei">
+<meta property="og:description" content="相信大家對於 facebook hashtag 都已經很熟悉了, 只要鍵入 # 開頭的符號, 就可以輕輕鬆鬆幫自己的 post 上 tag, 透過 hashtag 的導入, 可以迅速的將自己的 post 做一個 grouping, 讓對該主題有興趣的朋友可以一覽下了這個 tag 的 post 有哪些, 由於這是個有趣的 feature, 所以我們家 PM 也希望可以把這功能納入自家服務當中, 於是筆者便著手 survey 一下相關的實作, 筆者發現像這種特殊用途的 input 類型 tag 其實非常適合使用 web components 來做封裝, 類似 inpyt[type=date] 一樣, 只要設定特定的 HTML tag 便能馬上具備特定的功能, 於是乎 <hash-tag> 這個標籤變因應此需求而誕生~">
+<meta property="og:image" content="http://mei.homin.com.tw/img/preview/hashtag.png">
+<title>hashtag - web components based input field</title>
+<link rel="dns-prefetch" href="//mei.homin.com.tw">
+<link rel="canonical" href="http://mei.homin.com.tw/hashtagPrototype.html">
+<link rel="stylesheet" href="css/cssbase.css">
+<link rel="stylesheet" href="css/adornFormElements.css">
+<link rel="stylesheet" href="css/hashtag.css">
+<script src="js/pageRender.js" data-source="js/pack-hashtag.js&js/hashtagInit.js"></script>
+</head>
+
+<body>
+<header id="hd" role="banner">
+	<h1>hashtag - web components based input field</h1>
+</header>
+
+<main id="bd" role="main">
+	<section>
+		<form>
+			<label class="decoration">
+				<hash-tag hidden>
+					<h3>hash-tag</h3>
+					<input name="hashtag" value="#mei #lauMu" placeholder="Enter some hashtag here...">
+				</hash-tag>
+			</label>
+		</form>
+	</section>
+</main>
+
+<footer id="ft">
+	<small role="contentinfo">Powered by mei's studio.</small>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "CreativeWork",
+  "name": "hashtag - web components based input field",
+  "url": "http://mei.homin.com.tw/hashtagPrototype.html",
+  "description": "相信大家對於 facebook hashtag 都已經很熟悉了, 只要鍵入 # 開頭的符號, 就可以輕輕鬆鬆幫自己的 post 上 tag, 透過 hashtag 的導入, 可以迅速的將自己的 post 做一個 grouping, 讓對該主題有興趣的朋友可以一覽下了這個 tag 的 post 有哪些, 由於這是個有趣的 feature, 所以我們家 PM 也希望可以把這功能納入自家服務當中, 於是筆者便著手 survey 一下相關的實作, 筆者發現像這種特殊用途的 input 類型 tag 其實非常適合使用 web components 來做封裝, 類似 inpyt[type=date] 一樣, 只要設定特定的 HTML tag 便能馬上具備特定的功能, 於是乎 <hash-tag> 這個標籤變因應此需求而誕生~",
+  "image": "http://mei.homin.com.tw/img/preview/hashtag.png",
+  "author": {
+	  "@type": "Person",
+	  "name": "Paul Li",
+	  "jobTitle": "Front End engineer",
+	  "affiliation": "mei's studio",
+	  "additionalName": "mei",
+	  "url": "https://www.facebook.com/mei.studio.li",
+	  "image": "https://graph.facebook.com/mei.studio.li/picture",
+	  "brand": "mei's studio",
+	  "familyName": "Li",
+	  "gender": "M",
+	  "givenName": "Paul",
+	  "owns": "mei's studio",
+	  "worksFor": "Yahoo",
+	  "description": "People who loves all front end skills"
+  },
+  "dateCreated": "2016-04-21",
+  "datePublished": "2016-04-21",
+  "genre": "web components",
+  "keywords": "hashtag,webcomponents"
+}
+</script>
+</body>
+</html>

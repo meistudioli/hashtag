@@ -1,0 +1,8 @@
+main{padding-top:0;}
+section{width:60%;margin-top:10vmin;}
+form{width:100%;display:block;}
+label{width:96%;width:calc(100% - 20px);padding:10px 10px;padding:0 2%\9;*padding:0 2%;display:block;}
+label input{visibility:hidden;}
+
+.mobile section{width:90%;margin-top:4vmin;}
+.mobile section hash-tag{font-size:4.5vmin;line-height:2;}
