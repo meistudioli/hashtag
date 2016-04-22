@@ -280,6 +280,7 @@ hashtag.prototype = {
 			for (var i=-1,l=match.length;++i<l;) {
 				var input, value;
 				value = match[i].trim();
+				if (this.Data.values.indexOf(value) != -1) continue;
 				this.Data.values.push(value);
 
 				input = mk('', {tag:'input'});
